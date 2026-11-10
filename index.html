@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidayath TV — হৃদয়ে শান্তি, জীবনে হিদায়াত</title>
+<meta name="description" content="Hidayath TV — বাংলায় কুরআন তিলাওয়াত ও অর্থ, দোয়া ও জিকির, কুরআনের গল্প এবং ইসলামিক রিমাইন্ডারের YouTube channel। নামাজের সময়সূচি, প্রতিদিনের আয়াত ও ডিজিটাল তাসবীহ।">
+<meta property="og:title" content="Hidayath TV — হৃদয়ে শান্তি, জীবনে হিদায়াত">
+<meta property="og:description" content="বাংলায় কুরআন তিলাওয়াত ও অর্থ, দোয়া-জিকির, গল্প ও রিমাইন্ডার। নামাজের সময়, প্রতিদিনের আয়াত, ডিজিটাল তাসবীহ।">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%2307120D'/%3E%3Cpath d='M50 14 L58 38 L84 38 L63 53 L71 78 L50 62 L29 78 L37 53 L16 38 L42 38 Z' fill='%23C9A45C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Hind+Siliguri:wght@300;400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07120D; --bg2:#0A1D14; --panel:#0C2418; --panel2:#10301F;
+  --gold:#C9A45C; --gold2:#E7CC85; --cream:#F4EFDE; --muted:#AFC0AC;
+  --line:rgba(201,164,92,.28); --red:#E05252;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--cream);font-family:'Hind Siliguri',sans-serif;line-height:1.7;overflow-x:hidden}
+::selection{background:var(--gold);color:#08130D}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+.arabic{font-family:'Amiri',serif}
+.display{font-family:'Marcellus',serif;letter-spacing:.14em}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:60;background:rgba(7,18,13,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.header-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-badge{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--gold);display:grid;place-items:center;background:#0B2015;flex:none}
+.logo-badge svg{width:24px;height:24px}
+.logo-name{font-family:'Marcellus',serif;font-size:21px;letter-spacing:.16em;color:var(--cream);line-height:1.1}
+.logo-name b{color:var(--gold);font-weight:400}
+.logo-sub{font-size:12px;color:var(--muted);letter-spacing:.05em}
+nav.main-nav{display:flex;gap:30px}
+nav.main-nav a{font-size:15.5px;color:var(--cream);opacity:.9;position:relative;padding:4px 0}
+nav.main-nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold);transition:width .3s}
+nav.main-nav a:hover::after{width:100%}
+.btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,var(--gold),#A8823D);color:#0A1710;font-weight:600;font-size:15.5px;padding:11px 22px;border-radius:999px;border:none;cursor:pointer;transition:transform .25s,box-shadow .25s;box-shadow:0 6px 22px rgba(201,164,92,.25)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(201,164,92,.38)}
+.btn.ghost{background:transparent;color:var(--gold2);border:1.5px solid var(--gold);box-shadow:none}
+.btn.ghost:hover{background:rgba(201,164,92,.1)}
+.btn svg{width:18px;height:18px;flex:none}
+.hamburger{display:none;background:none;border:1.5px solid var(--line);border-radius:10px;width:44px;height:44px;cursor:pointer;place-items:center}
+.hamburger svg{width:22px;height:22px}
+.mobile-menu{display:none;flex-direction:column;gap:4px;padding:10px 22px 18px;border-top:1px solid var(--line);background:rgba(7,18,13,.97)}
+.mobile-menu a{padding:9px 6px;font-size:16px;border-bottom:1px dashed rgba(201,164,92,.15)}
+.mobile-menu.open{display:flex}
+
+/* ---------- hero ---------- */
+.hero{position:relative;text-align:center;padding:96px 0 84px;background:
+  radial-gradient(900px 420px at 50% -80px,rgba(201,164,92,.16),transparent 65%),
+  radial-gradient(700px 400px at 85% 110%,rgba(14,80,52,.35),transparent 60%),
+  var(--bg2)}
+.hero::before{content:"";position:absolute;inset:0;opacity:.05;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cpath d='M36 6 L43 29 L66 36 L43 43 L36 66 L29 43 L6 36 L29 29 Z' fill='none' stroke='%23C9A45C' stroke-width='1.4'/%3E%3C/svg%3E")}
+.hero .wrap{position:relative}
+.bismillah{font-size:clamp(30px,5.4vw,46px);color:var(--gold2);line-height:1.9;text-shadow:0 2px 26px rgba(201,164,92,.3)}
+.hero h1{font-size:clamp(34px,6vw,58px);font-weight:700;line-height:1.3;margin:22px auto 14px;max-width:820px}
+.hero h1 .gold{color:var(--gold2)}
+.hero p{max-width:640px;margin:0 auto;color:var(--muted);font-size:clamp(16px,2.4vw,18.5px);font-weight:300}
+.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:36px}
+.hero-dates{margin-top:40px;display:inline-flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.date-chip{border:1px solid var(--line);background:rgba(12,36,24,.72);border-radius:999px;padding:8px 18px;font-size:14.5px;color:var(--gold2)}
+.date-chip span{color:var(--muted)}
+
+/* ---------- dhikr marquee ---------- */
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#081A10;overflow:hidden;padding:13px 0}
+.marquee-track{display:flex;gap:0;width:max-content;animation:scroll 30s linear infinite}
+.marquee-track span{font-family:'Amiri',serif;font-size:20px;color:var(--gold);padding:0 26px;white-space:nowrap}
+.marquee-track i{color:rgba(201,164,92,.45);font-style:normal;align-self:center}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* ---------- sections ---------- */
+section{padding:84px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 48px}
+.sec-kicker{font-family:'Marcellus',serif;letter-spacing:.3em;font-size:12.5px;color:var(--gold);text-transform:uppercase}
+.sec-head h2{font-size:clamp(27px,4.4vw,38px);font-weight:600;margin:10px 0 8px}
+.sec-head p{color:var(--muted);font-weight:300;font-size:16.5px}
+.divider{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px}
+.divider::before,.divider::after{content:"";width:56px;height:1px;background:var(--line)}
+.divider svg{width:15px;height:15px}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+.about-text p{color:#DADFCB;font-weight:300;font-size:17.5px;margin-bottom:16px}
+.about-text p b{color:var(--gold2);font-weight:500}
+.about-quote{border:1px solid var(--line);background:linear-gradient(160deg,var(--panel2),var(--panel));border-radius:20px;padding:34px 30px;text-align:center}
+.about-quote .arabic{font-size:25px;color:var(--gold2);line-height:2}
+.about-quote p{color:var(--muted);margin-top:10px;font-size:16px}
+.about-quote small{color:var(--gold);letter-spacing:.06em}
+
+/* content cards */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:linear-gradient(165deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:32px 24px;transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-6px);border-color:var(--gold)}
+.card .icon{width:58px;height:58px;border-radius:16px;background:rgba(201,164,92,.12);border:1px solid var(--line);display:grid;place-items:center;margin-bottom:18px}
+.card .icon svg{width:28px;height:28px}
+.card h3{font-size:19.5px;font-weight:600;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15px;font-weight:300}
+
+/* prayer */
+#prayer{background:var(--bg2)}
+.prayer-box{max-width:760px;margin:0 auto;background:linear-gradient(170deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:22px;padding:36px 34px}
+.prayer-meta{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;border-bottom:1px dashed var(--line);padding-bottom:18px;margin-bottom:8px}
+.prayer-meta .loc{font-size:18px;font-weight:600}
+.prayer-meta .loc span{color:var(--gold2)}
+.prayer-meta .hijri{text-align:right;color:var(--muted);font-size:14.5px}
+.prayer-meta .hijri b{color:var(--gold2);font-weight:500}
+.p-row{display:flex;justify-content:space-between;align-items:center;padding:13px 14px;border-radius:12px;font-size:17.5px}
+.p-row:nth-child(even){background:rgba(255,255,255,.025)}
+.p-row .p-name{display:flex;align-items:center;gap:12px}
+.p-row .p-time{font-weight:600;letter-spacing:.03em}
+.p-row.next{background:rgba(201,164,92,.13);border:1px solid var(--gold)}
+.p-badge{font-size:12px;background:var(--gold);color:#0A1710;font-weight:700;padding:2px 10px;border-radius:999px}
+.next-line{text-align:center;margin-top:20px;font-size:17px;color:var(--gold2)}
+.next-line b{font-size:19px}
+.p-note{text-align:center;color:var(--muted);font-size:13px;margin-top:10px;font-weight:300}
+.spin{display:inline-block;width:15px;height:15px;border:2px solid var(--line);border-top-color:var(--gold);border-radius:50%;animation:sp 1s linear infinite;vertical-align:-2px}
+@keyframes sp{to{transform:rotate(360deg)}}
+
+/* daily */
+.daily-card{max-width:820px;margin:0 auto;text-align:center;border:1px solid var(--line);border-radius:22px;padding:48px 40px;background:
+  radial-gradient(600px 260px at 50% -60px,rgba(201,164,92,.13),transparent 65%),var(--panel)}
+.daily-card .arabic{font-size:clamp(24px,4.4vw,34px);color:var(--gold2);line-height:2.1}
+.daily-card .bn{font-size:clamp(18px,3vw,22px);margin-top:16px;color:var(--cream)}
+.daily-card .ref{margin-top:14px;color:var(--gold);font-size:15px;letter-spacing:.04em}
+.daily-card .kind{font-size:13px;color:var(--muted);letter-spacing:.22em;text-transform:uppercase;font-family:'Marcellus',serif}
+
+/* tasbih */
+.tasbih-box{max-width:560px;margin:0 auto;text-align:center}
+.dhikr-chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:34px}
+.chip{border:1.5px solid var(--line);background:transparent;color:var(--cream);font-family:inherit;font-size:16px;padding:9px 20px;border-radius:999px;cursor:pointer;transition:all .25s}
+.chip.active{background:var(--gold);color:#0A1710;border-color:var(--gold);font-weight:600}
+.tasbih-ring{position:relative;width:230px;height:230px;margin:0 auto}
+.tasbih-ring svg.ring{width:230px;height:230px;transform:rotate(-90deg)}
+.ring-bg{fill:none;stroke:rgba(201,164,92,.18);stroke-width:9}
+.ring-fg{fill:none;stroke:var(--gold);stroke-width:9;stroke-linecap:round;transition:stroke-dashoffset .25s}
+.tasbih-btn{position:absolute;inset:16px;border-radius:50%;border:1px solid var(--line);background:radial-gradient(circle at 35% 30%,#17402A,#0B2115);color:var(--cream);cursor:pointer;font-family:inherit;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;transition:transform .15s}
+.tasbih-btn:active{transform:scale(.965)}
+.tasbih-btn .t-dhikr{font-size:19px;color:var(--gold2);font-weight:600;padding:0 18px;line-height:1.35}
+.tasbih-btn .t-count{font-size:44px;font-weight:700;line-height:1.1}
+.tasbih-btn .t-goal{font-size:13.5px;color:var(--muted)}
+.tasbih-stats{display:flex;gap:14px;justify-content:center;margin-top:28px;flex-wrap:wrap}
+.t-stat{border:1px solid var(--line);border-radius:14px;padding:10px 22px;background:var(--panel)}
+.t-stat b{font-size:20px;color:var(--gold2)}
+.t-stat span{display:block;font-size:13px;color:var(--muted)}
+.reset-btn{margin-top:22px;background:none;border:1.5px solid var(--line);color:var(--muted);font-family:inherit;font-size:14.5px;padding:8px 22px;border-radius:999px;cursor:pointer}
+.reset-btn:hover{color:var(--gold2);border-color:var(--gold)}
+.tasbih-msg{min-height:28px;margin-top:16px;color:var(--gold2);font-size:16.5px}
+
+/* names */
+.names-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.name-card{border:1px solid rgba(201,164,92,.18);background:rgba(255,255,255,.02);border-radius:14px;padding:18px 14px;text-align:center;transition:border-color .3s,transform .3s}
+.name-card:hover{border-color:var(--gold);transform:translateY(-3px)}
+.name-card .ar{font-family:'Amiri',serif;font-size:22px;color:var(--gold2);line-height:1.8}
+.name-card .tr{font-size:14.5px;font-weight:600;margin-top:2px}
+.name-card .mn{font-size:13.5px;color:var(--muted);font-weight:300}
+
+/* cta */
+#watch{background:var(--bg2)}
+.cta-box{max-width:820px;margin:0 auto;text-align:center;border:1px solid var(--line);border-radius:24px;padding:56px 36px;background:
+  radial-gradient(600px 300px at 50% 0,rgba(201,164,92,.15),transparent 65%),var(--panel)}
+.cta-box h2{font-size:clamp(26px,4.4vw,36px);margin-bottom:12px}
+.cta-box p{color:var(--muted);font-weight:300;max-width:520px;margin:0 auto 30px}
+
+/* footer */
+footer{border-top:1px solid var(--line);background:#050E09;padding:52px 0 30px}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:36px;margin-bottom:38px}
+.foot-grid h4{font-size:16.5px;margin-bottom:14px;color:var(--gold2);font-weight:600}
+.foot-grid a{display:block;color:var(--muted);font-size:15px;padding:4px 0;font-weight:300}
+.foot-grid a:hover{color:var(--gold2)}
+.foot-grid p{color:var(--muted);font-size:15px;font-weight:300}
+.foot-bottom{border-top:1px dashed rgba(201,164,92,.18);padding-top:22px;text-align:center;color:var(--muted);font-size:14px;font-weight:300}
+.foot-bottom b{color:var(--gold2);font-weight:500}
+
+/* ---------- responsive ---------- */
+@media(max-width:960px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .names-grid{grid-template-columns:repeat(3,1fr)}
+  .about-grid{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  nav.main-nav{display:none}
+  .hamburger{display:grid}
+  .header-sub-btn{display:none}
+  section{padding:60px 0}
+  .hero{padding:64px 0 56px}
+  .foot-grid{grid-template-columns:1fr}
+  .prayer-box{padding:26px 20px}
+  .daily-card{padding:36px 22px}
+}
+@media(max-width:520px){
+  .cards{grid-template-columns:1fr}
+  .names-grid{grid-template-columns:repeat(2,1fr)}
+  .tasbih-ring{width:200px;height:200px}
+  .tasbih-ring svg.ring{width:200px;height:200px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-in">
+    <a class="logo" href="#top">
+      <span class="logo-badge"><svg viewBox="0 0 100 100" fill="none"><path d="M50 12 L59 39 L88 39 L64 56 L73 84 L50 66 L27 84 L36 56 L12 39 L41 39 Z" fill="#C9A45C"/></svg></span>
+      <span>
+        <span class="logo-name">HIDAYATH <b>TV</b></span><br>
+        <span class="logo-sub">ইসলামিক রিমাইন্ডার • বাংলা</span>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <a href="#about">আমাদের কথা</a>
+      <a href="#content">যা পাবেন</a>
+      <a href="#prayer">নামাজের সময়</a>
+      <a href="#daily">প্রতিদিনের বাণী</a>
+      <a href="#tasbih">তাসবীহ</a>
+    </nav>
+    <a class="btn header-sub-btn" href="https://www.youtube.com/@HidayathTV-b3o" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.9 4.8 12 4.8 12 4.8s-5.9 0-7.6.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2 12a29 29 0 0 0 .4 4.8 2.8 2.8 0 0 0 2 2c1.7.4 7.6.4 7.6.4s5.9 0 7.6-.4a2.8 2.8 0 0 0 2-2A29 29 0 0 0 22 12a29 29 0 0 0-.4-4.8zM10 15.2V8.8L15.5 12z"/></svg>
+      Subscribe
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="মেনু খুলুন">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#E7CC85" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">আমাদের কথা</a>
+    <a href="#content">যা পাবেন</a>
+    <a href="#prayer">নামাজের সময়</a>
+    <a href="#daily">প্রতিদিনের বাণী</a>
+    <a href="#tasbih">তাসবীহ</a>
+    <a href="https://www.youtube.com/@HidayathTV-b3o" target="_blank" rel="noopener">YouTube-এ Subscribe করো</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap">
+      <div class="bismillah arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+      <h1>হৃদয়ে শান্তি,<br>জীবনে <span class="gold">হিদায়াত</span></h1>
+      <p>বাংলায় কুরআন তিলাওয়াত ও তার অর্থ, দোয়া-জিকির, কুরআনের গল্প আর ছোট ছোট রিমাইন্ডার — যেন ব্যস্ত দিনের মাঝেও ঈমানের কথা মনে পড়ে যায়।</p>
+      <div class="hero-btns">
+        <a class="btn" href="https://www.youtube.com/@HidayathTV-b3o" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.9 4.8 12 4.8 12 4.8s-5.9 0-7.6.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2 12a29 29 0 0 0 .4 4.8 2.8 2.8 0 0 0 2 2c1.7.4 7.6.4 7.6.4s5.9 0 7.6-.4a2.8 2.8 0 0 0 2-2A29 29 0 0 0 22 12a29 29 0 0 0-.4-4.8zM10 15.2V8.8L15.5 12z"/></svg>
+          Channel-এ Subscribe করো
+        </a>
+        <a class="btn ghost" href="#prayer">আজকের নামাজের সময়</a>
+      </div>
+      <div class="hero-dates">
+        <span class="date-chip" id="chipGreg"><span>তারিখ:</span> লোড হচ্ছে…</span>
+        <span class="date-chip" id="chipHijri"><span>হিজরি:</span> লোড হচ্ছে…</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DHIKR MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack">
+      <span>سُبْحَانَ الله</span><i>✦</i><span>الْحَمْدُ لِلَّه</span><i>✦</i><span>اللهُ أَكْبَر</span><i>✦</i><span>لَا إِلَٰهَ إِلَّا الله</span><i>✦</i><span>أَسْتَغْفِرُ الله</span><i>✦</i><span>اللَّهُمَّ صَلِّ عَلَى مُحَمَّد</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">About Us</div>
+        <h2>আমাদের কথা</h2>
+        <div class="divider"><svg viewBox="0 0 100 100"><path d="M50 5 L58 42 L95 50 L58 58 L50 95 L42 58 L5 50 L42 42 Z" fill="#C9A45C"/></svg></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Hidayath TV শুরু হয়েছিল একটা সহজ ইচ্ছা থেকে — <b>ইসলামের শান্তি আর সৌন্দর্যের কথা সহজ ভাষায় সবার কাছে পৌঁছে দেওয়া</b>, যেন কথাগুলো হৃদয়ে গিয়ে লাগে।</p>
+          <p>আমাদের বেশিরভাগ video বাংলায়, কারণ আমরা চাই বার্তাটা নিজের দেশের মানুষের কাছে তাদের <b>নিজের ভাষায়</b> পৌঁছাক। সততার সাথে বলি — কিছু video তৈরিতে আমরা AI-এর সাহায্য নিই, কিন্তু প্রতিটা কথা আমরা নিজেরা যত্ন আর সম্মানের সাথে যাচাই করি। আর কুরআন তিলাওয়াতের বেলায় সবসময় <b>আসল ক্বারীর কণ্ঠই</b> থাকে, কখনো মেশিনের গলা নয়।</p>
+          <p>কোনো video দেখে হৃদয়ে একটুখানি শান্তি এলেই আমাদের পরিশ্রম সার্থক।</p>
+        </div>
+        <div class="about-quote">
+          <div class="arabic">أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ</div>
+          <p>"জেনে রাখো, আল্লাহর স্মরণের মাধ্যমেই হৃদয়সমূহ প্রশান্তি লাভ করে।"</p>
+          <small>— সূরা আর-রাদ, আয়াত ২৮</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section id="content" style="padding-top:20px">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">On The Channel</div>
+        <h2>Channel-এ যা পাবেন</h2>
+        <p>প্রতিটা বিষয় বাছা হয়েছে যেন দেখে কিছু শেখা যায়, আর মনটাও ভালো হয়।</p>
+        <div class="divider"><svg viewBox="0 0 100 100"><path d="M50 5 L58 42 L95 50 L58 58 L50 95 L42 58 L5 50 L42 42 Z" fill="#C9A45C"/></svg></div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#E7CC85" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/><path d="M12 7c.6 1.8 2.2 3 4 3-1 .8-1.6 1.8-2 3-.4-1.2-1-2.2-2-3 1.8 0 3.4-1.2 4-3z" fill="#E7CC85" stroke="none" transform="translate(-2.5,-1) scale(.9)"/></svg></div>
+          <h3>তিলাওয়াত ও অর্থ</h3>
+          <p>মন ছুঁয়ে যাওয়া কুরআন তিলাওয়াত, সাথে আয়াতের সহজ বাংলা অর্থ আর সংক্ষিপ্ত ভাবনা।</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#E7CC85" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.5A8.8 8.8 0 1 1 9.5 3.5a7.2 7.2 0 0 0 11 11z"/><path d="M17.5 3.5l.6 1.7 1.7.6-1.7.6-.6 1.7-.6-1.7-1.7-.6 1.7-.6z" fill="#E7CC85" stroke="none"/></svg></div>
+          <h3>দোয়া ও জিকির</h3>
+          <p>সকাল-সন্ধ্যার দোয়া, বিপদের সময়ের দোয়া আর প্রতিদিনের ছোট ছোট জিকির — অর্থসহ।</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#E7CC85" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+          <h3>গল্প ও জীবনী</h3>
+          <p>কুরআনে বর্ণিত ঘটনা আর প্রিয় নবীজির (সা.) জীবনের গল্প — সহজ ভাষায়, শিক্ষাসহ।</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#E7CC85" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M10 21a2 2 0 0 0 4 0"/></svg></div>
+          <h3>রিমাইন্ডার ও ওয়াজ</h3>
+          <p>দৈনন্দিন জীবনের জন্য ছোট ছোট ইসলামিক রিমাইন্ডার আর বাংলায় সহজ আলোচনা।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRAYER -->
+  <section id="prayer">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Prayer Times</div>
+        <h2>আজকের নামাজের সময়</h2>
+        <p>প্রতিদিন অটোমেটিক হালনাগাদ হয় — ইন্টারনেট থাকলেই আজকের সঠিক সময় দেখাবে।</p>
+        <div class="divider"><svg viewBox="0 0 100 100"><path d="M50 5 L58 42 L95 50 L58 58 L50 95 L42 58 L5 50 L42 42 Z" fill="#C9A45C"/></svg></div>
+      </div>
+      <div class="prayer-box">
+        <div class="prayer-meta">
+          <div class="loc">📍 <span>কুষ্টিয়া</span>, বাংলাদেশ</div>
+          <div class="hijri" id="prayerHijri"><span class="spin"></span> সময় লোড হচ্ছে…</div>
+        </div>
+        <div id="prayerRows">
+          <div class="p-row"><span class="p-name">ফজর</span><span class="p-time">—</span></div>
+          <div class="p-row"><span class="p-name">সূর্যোদয়</span><span class="p-time">—</span></div>
+          <div class="p-row"><span class="p-name">যোহর</span><span class="p-time">—</span></div>
+          <div class="p-row"><span class="p-name">আসর</span><span class="p-time">—</span></div>
+          <div class="p-row"><span class="p-name">মাগরিব</span><span class="p-time">—</span></div>
+          <div class="p-row"><span class="p-name">এশা</span><span class="p-time">—</span></div>
+        </div>
+        <div class="next-line" id="nextLine"></div>
+        <p class="p-note" id="prayerNote">সময়সূচি: Aladhan (করাচি পদ্ধতি) অনুযায়ী। স্থানভেদে ১-২ মিনিট এদিক-সেদিক হতে পারে।</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DAILY -->
+  <section id="daily">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Daily Words</div>
+        <h2>প্রতিদিনের বাণী</h2>
+        <p>প্রতিদিন একটি করে আয়াত বা হাদিস — পেজটি খুললেই আজকেরটি দেখাবে।</p>
+        <div class="divider"><svg viewBox="0 0 100 100"><path d="M50 5 L58 42 L95 50 L58 58 L50 95 L42 58 L5 50 L42 42 Z" fill="#C9A45C"/></svg></div>
+      </div>
+      <div class="daily-card">
+        <div class="kind" id="dailyKind">আজকের আয়াত</div>
+        <div class="arabic" id="dailyAr"></div>
+        <div class="bn" id="dailyBn"></div>
+        <div class="ref" id="dailyRef"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TASBIH -->
+  <section id="tasbih" style="padding-top:20px">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Digital Tasbih</div>
+        <h2>ডিজিটাল তাসবীহ</h2>
+        <p>জিকির বেছে নিয়ে গোল বোতামটিতে চাপ দিতে থাকো — ৩৩ বার হলেই বৃত্তটি পূর্ণ হবে।</p>
+        <div class="divider"><svg viewBox="0 0 100 100"><path d="M50 5 L58 42 L95 50 L58 58 L50 95 L42 58 L5 50 L42 42 Z" fill="#C9A45C"/></svg></div>
+      </div>
+      <div class="tasbih-box">
+        <div class="dhikr-chips" id="dhikrChips">
+          <button class="chip active" data-dhikr="সুবহানাল্লাহ">সুবহানাল্লাহ</button>
+          <button class="chip" data-dhikr="আলহামদুলিল্লাহ">আলহামদুলিল্লাহ</button>
+          <button class="chip" data-dhikr="আল্লাহু আকবার">আল্লাহু আকবার</button>
+          <button class="chip" data-dhikr="আস্তাগফিরুল্লাহ">আস্তাগফিরুল্লাহ</button>
+          <button class="chip" data-dhikr="লা ইলাহা ইল্লাল্লাহ">লা ইলাহা ইল্লাল্লাহ</button>
+        </div>
+        <div class="tasbih-ring">
+          <svg class="ring" viewBox="0 0 230 230">
+            <circle class="ring-bg" cx="115" cy="115" r="106"></circle>
+            <circle class="ring-fg" id="ringFg" cx="115" cy="115" r="106" stroke-dasharray="666" stroke-dashoffset="666"></circle>
+          </svg>
+          <button class="tasbih-btn" id="tasbihBtn" aria-label="তাসবীহ গুনুন">
+            <span class="t-dhikr" id="tDhikr">সুবহানাল্লাহ</span>
+            <span class="t-count" id="tCount">০</span>
+            <span class="t-goal">লক্ষ্য ৩৩ বার • চাপ দিন</span>
+          </button>
+        </div>
+        <div class="tasbih-stats">
+          <div class="t-stat"><b id="tRounds">০</b><span>পূর্ণ রাউন্ড</span></div>
+          <div class="t-stat"><b id="tTotal">০</b><span>মোট জিকির (এই সেশন)</span></div>
+        </div>
+        <div class="tasbih-msg" id="tasbihMsg"></div>
+        <button class="reset-btn" id="tasbihReset">আবার শুরু করো</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- NAMES -->
+  <section id="names" style="padding-top:20px">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Asmaul Husna</div>
+        <h2>আল্লাহর সুন্দর নামসমূহ</h2>
+        <p>আসমাউল হুসনা থেকে কয়েকটি — নামের সাথে সহজ অর্থ।</p>
+        <div class="divider"><svg viewBox="0 0 100 100"><path d="M50 5 L58 42 L95 50 L58 58 L50 95 L42 58 L5 50 L42 42 Z" fill="#C9A45C"/></svg></div>
+      </div>
+      <div class="names-grid" id="namesGrid"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="watch">
+    <div class="wrap">
+      <div class="cta-box">
+        <div class="sec-kicker">Our Journey Begins</div>
+        <h2>যাত্রা সবে শুরু হচ্ছে</h2>
+        <p>Channel-এ প্রথম video গুলো আসছে খুব শীঘ্রই। আগেই Subscribe করে রাখো — যেন প্রথম video টি মিস না হয়। আল্লাহ তোমাদের সবাইকে ভালো রাখুন।</p>
+        <a class="btn" href="https://www.youtube.com/@HidayathTV-b3o" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.9 4.8 12 4.8 12 4.8s-5.9 0-7.6.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2 12a29 29 0 0 0 .4 4.8 2.8 2.8 0 0 0 2 2c1.7.4 7.6.4 7.6.4s5.9 0 7.6-.4a2.8 2.8 0 0 0 2-2A29 29 0 0 0 22 12a29 29 0 0 0-.4-4.8zM10 15.2V8.8L15.5 12z"/></svg>
+          YouTube-এ Subscribe করো
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#top" style="margin-bottom:14px">
+          <span class="logo-badge"><svg viewBox="0 0 100 100" fill="none"><path d="M50 12 L59 39 L88 39 L64 56 L73 84 L50 66 L27 84 L36 56 L12 39 L41 39 Z" fill="#C9A45C"/></svg></span>
+          <span><span class="logo-name">HIDAYATH <b>TV</b></span></span>
+        </a>
+        <p style="margin-top:12px">বাংলায় ইসলামিক রিমাইন্ডার, কুরআন তিলাওয়াত ও অর্থ, দোয়া-জিকির আর গল্পের channel। সহজ ভাষায়, হৃদয়ের কাছাকাছি।</p>
+      </div>
+      <div>
+        <h4>ঘুরে দেখো</h4>
+        <a href="#about">আমাদের কথা</a>
+        <a href="#content">Channel-এ যা পাবেন</a>
+        <a href="#prayer">নামাজের সময়</a>
+        <a href="#tasbih">ডিজিটাল তাসবীহ</a>
+      </div>
+      <div>
+        <h4>যোগাযোগ</h4>
+        <a href="https://www.youtube.com/@HidayathTV-b3o" target="_blank" rel="noopener">YouTube Channel</a>
+        <a href="https://www.youtube.com/@HidayathTV-b3o/about" target="_blank" rel="noopener">Channel-এর About অংশ</a>
+        <p style="margin-top:8px">ব্যবসা বা কপিরাইট সংক্রান্ত যোগাযোগের email channel-এর About অংশে দেওয়া আছে।</p>
+      </div>
+    </div>
+    <div class="foot-bottom">© ২০২৬ <b>Hidayath TV</b> • কুষ্টিয়া, বাংলাদেশ থেকে ভালোবাসা দিয়ে তৈরি • সুবহানাল্লাহি ওয়া বিহামদিহি</div>
+  </div>
+</footer>
+
+<script>
+/* ================= helpers ================= */
+const BN_DIGITS = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
+const toBn = s => String(s).replace(/\d/g, d => BN_DIGITS[d]);
+const pad = n => String(n).padStart(2,'0');
+
+/* ================= mobile menu ================= */
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+/* marquee: duplicate content for a seamless loop */
+const track = document.getElementById('marqueeTrack');
+track.innerHTML += track.innerHTML;
+
+/* gregorian date chip */
+(function(){
+  const days = ['রবিবার','সোমবার','মঙ্গলবার','বুধবার','বৃহস্পতিবার','শুক্রবার','শনিবার'];
+  const months = ['জানুয়ারি','ফেব্রুয়ারি','মার্চ','এপ্রিল','মে','জুন','জুলাই','আগস্ট','সেপ্টেম্বর','অক্টোবর','নভেম্বর','ডিসেম্বর'];
+  const now = new Date();
+  document.getElementById('chipGreg').innerHTML = '<span>তারিখ:</span> ' + days[now.getDay()] + ', ' + toBn(now.getDate()) + ' ' + months[now.getMonth()] + ' ' + toBn(now.getFullYear());
+})();
+
+/* ================= prayer times ================= */
+const PRAYERS = [
+  {key:'Fajr',    bn:'ফজর',     period:'ভোর'},
+  {key:'Sunrise', bn:'সূর্যোদয়', period:'সকাল'},
+  {key:'Dhuhr',   bn:'যোহর',    period:'দুপুর'},
+  {key:'Asr',     bn:'আসর',     period:'বিকাল'},
+  {key:'Maghrib', bn:'মাগরিব',  period:'সন্ধ্যা'},
+  {key:'Isha',    bn:'এশা',     period:'রাত'}
+];
+let prayerDates = []; // Date objects for today, in PRAYERS order
+let nextIdx = -1;
+
+function fmtTime(t, period){
+  let [h, m] = t.split(':').map(Number);
+  const h12 = ((h + 11) % 12) + 1;
+  return period + ' ' + toBn(h12) + ':' + toBn(pad(m));
+}
+function renderPrayers(timings){
+  const rows = document.getElementById('prayerRows');
+  const today = new Date(); today.setHours(0,0,0,0);
+  prayerDates = PRAYERS.map(p => {
+    const [h, m] = timings[p.key].split(':').map(Number);
+    const d = new Date(today); d.setHours(h, m, 0, 0); return d;
+  });
+  rows.innerHTML = PRAYERS.map((p, i) =>
+    '<div class="p-row" id="prow' + i + '"><span class="p-name">' + p.bn + '</span><span class="p-time">' + fmtTime(timings[p.key], p.period) + '</span></div>'
+  ).join('');
+  tickCountdown();
+}
+function tickCountdown(){
+  if(!prayerDates.length) return;
+  const now = new Date();
+  nextIdx = prayerDates.findIndex(d => d > now);
+  PRAYERS.forEach((p, i) => {
+    const row = document.getElementById('prow' + i);
+    if(!row) return;
+    const isNext = (i === nextIdx) || (nextIdx === -1 && i === 0);
+    row.classList.toggle('next', isNext);
+    const nameEl = row.querySelector('.p-name');
+    nameEl.innerHTML = p.bn + (isNext ? ' <span class="p-badge">পরবর্তী</span>' : '');
+  });
+  let target, label;
+  if(nextIdx === -1){ target = new Date(prayerDates[0]); target.setDate(target.getDate() + 1); label = PRAYERS[0].bn; }
+  else { target = prayerDates[nextIdx]; label = PRAYERS[nextIdx].bn; }
+  let diff = Math.max(0, Math.floor((target - now) / 1000));
+  const hh = Math.floor(diff / 3600), mm = Math.floor((diff % 3600) / 60), ss = diff % 60;
+  document.getElementById('nextLine').innerHTML =
+    'পরবর্তী নামাজ <b>' + label + '</b> — বাকি <b>' + toBn(hh) + ' ঘণ্টা ' + toBn(pad(mm)) + ' মিনিট ' + toBn(pad(ss)) + ' সেকেন্ড</b>';
+}
+setInterval(tickCountdown, 1000);
+
+(function loadPrayer(){
+  const now = new Date();
+  const url = 'https://api.aladhan.com/v1/timingsByCity/' + pad(now.getDate()) + '-' + pad(now.getMonth()+1) + '-' + now.getFullYear() + '?city=Kushtia&country=Bangladesh&method=1';
+  fetch(url).then(r => r.json()).then(res => {
+    const t = res.data.timings, h = res.data.date.hijri;
+    renderPrayers(t);
+    const hijriTxt = toBn(h.day) + ' ' + h.month.en + ' ' + toBn(h.year) + ' হিজরি';
+    document.getElementById('prayerHijri').innerHTML = 'আজ: <b>' + hijriTxt + '</b>';
+    document.getElementById('chipHijri').innerHTML = '<span>হিজরি:</span> ' + hijriTxt;
+  }).catch(() => {
+    /* fallback: approximate Kushtia times so the section never looks broken */
+    renderPrayers({Fajr:'04:57', Sunrise:'06:15', Dhuhr:'11:47', Asr:'14:58', Maghrib:'17:20', Isha:'18:37'});
+    document.getElementById('prayerHijri').innerHTML = 'আজকের আনুমানিক সময় দেখানো হচ্ছে';
+    document.getElementById('chipHijri').innerHTML = '<span>হিজরি:</span> সংযোগ পেলে দেখা যাবে';
+    document.getElementById('prayerNote').textContent = 'ইন্টারনেট সংযোগ পাওয়া যায়নি — আনুমানিক সময় দেখানো হলো। সংযোগ থাকলে প্রতিদিনের সঠিক সময় অটোমেটিক আসে।';
+  });
+})();
+
+/* ================= daily words ================= */
+const DAILY = [
+  {kind:'আজকের আয়াত', ar:'إِنَّ مَعَ الْعُسْرِ يُسْرًا', bn:'"নিশ্চয়ই কষ্টের সাথেই রয়েছে স্বস্তি।"', ref:'— সূরা আশ-শারহ (৯৪), আয়াত ৬'},
+  {kind:'আজকের আয়াত', ar:'أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ', bn:'"জেনে রাখো, আল্লাহর স্মরণের মাধ্যমেই হৃদয়সমূহ প্রশান্তি লাভ করে।"', ref:'— সূরা আর-রাদ (১৩), আয়াত ২৮'},
+  {kind:'আজকের আয়াত', ar:'لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا', bn:'"আল্লাহ কোনো প্রাণের উপর তার সাধ্যের বাইরে বোঝা চাপিয়ে দেন না।"', ref:'— সূরা আল-বাকারা (২), আয়াত ২৮৬'},
+  {kind:'আজকের আয়াত', ar:'وَقَالَ رَبُّكُمُ ادْعُونِي أَسْتَجِبْ لَكُمْ', bn:'"তোমাদের রব বলেছেন: তোমরা আমাকে ডাকো, আমি তোমাদের ডাকে সাড়া দিব।"', ref:'— সূরা গাফির (৪০), আয়াত ৬০'},
+  {kind:'আজকের আয়াত', ar:'فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ', bn:'"সুতরাং তোমরা আমাকে স্মরণ করো, আমিও তোমাদের স্মরণ করবো। আর আমার প্রতি কৃতজ্ঞ হও, অকৃতজ্ঞ হয়ো না।"', ref:'— সূরা আল-বাকারা (২), আয়াত ১৫২'},
+  {kind:'আজকের আয়াত', ar:'وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ', bn:'"আর যে আল্লাহর উপর ভরসা করে, তার জন্য তিনিই যথেষ্ট।"', ref:'— সূরা আত-তালাক (৬৫), আয়াত ৩'},
+  {kind:'আজকের হাদিস', ar:'', bn:'"সকল কাজের ফলাফল নিয়তের উপর নির্ভরশীল, আর প্রত্যেক মানুষ তাই পাবে যার সে নিয়ত করেছে।"', ref:'— সহীহ বুখারী, হাদিস ১'},
+  {kind:'আজকের হাদিস', ar:'', bn:'"তোমাদের মধ্যে সর্বোত্তম সেই ব্যক্তি, যে কুরআন শেখে এবং শেখায়।"', ref:'— সহীহ বুখারী, হাদিস ৫০২৭'},
+  {kind:'আজকের হাদিস', ar:'', bn:'"মুসলিম সেই ব্যক্তি, যার জিহ্বা ও হাত থেকে অন্য মুসলিমরা নিরাপদ থাকে।"', ref:'— সহীহ বুখারী, হাদিস ১০'},
+  {kind:'আজকের আয়াত', ar:'وَلَا تَهِنُوا وَلَا تَحْزَنُوا وَأَنتُمُ الْأَعْلَوْنَ إِن كُنتُم مُّؤْمِنِينَ', bn:'"তোমরা মনোবল হারিয়ে ফেলো না এবং দুঃখও করো না; তোমরাই বিজয়ী হবে, যদি তোমরা মুমিন হয়ে থাকো।"', ref:'— সূরা আলে ইমরান (৩), আয়াত ১৩৯'}
+];
+(function showDaily(){
+  const now = new Date();
+  const start = new Date(now.getFullYear(), 0, 0);
+  const dayOfYear = Math.floor((now - start) / 86400000);
+  const item = DAILY[dayOfYear % DAILY.length];
+  document.getElementById('dailyKind').textContent = item.kind;
+  const arEl = document.getElementById('dailyAr');
+  if(item.ar){ arEl.textContent = item.ar; arEl.style.display = 'block'; } else { arEl.style.display = 'none'; }
+  document.getElementById('dailyBn').textContent = item.bn;
+  document.getElementById('dailyRef').textContent = item.ref;
+})();
+
+/* ================= tasbih ================= */
+const GOAL = 33, CIRC = 666;
+let tCount = 0, tRounds = 0, tTotal = 0;
+const tCountEl = document.getElementById('tCount'), ringFg = document.getElementById('ringFg');
+const tMsg = document.getElementById('tasbihMsg');
+function updateTasbih(){
+  tCountEl.textContent = toBn(tCount);
+  document.getElementById('tRounds').textContent = toBn(tRounds);
+  document.getElementById('tTotal').textContent = toBn(tTotal);
+  ringFg.style.strokeDashoffset = CIRC - (CIRC * tCount / GOAL);
+}
+document.getElementById('tasbihBtn').addEventListener('click', () => {
+  tCount++; tTotal++;
+  if(tCount >= GOAL){
+    tRounds++;
+    tMsg.textContent = 'আলহামদুলিল্লাহ! ৩৩ বার পূর্ণ হলো — আল্লাহ কবুল করুন।';
+    tCount = 0;
+  } else { tMsg.textContent = ''; }
+  updateTasbih();
+});
+document.getElementById('dhikrChips').addEventListener('click', e => {
+  const chip = e.target.closest('.chip'); if(!chip) return;
+  document.querySelectorAll('#dhikrChips .chip').forEach(c => c.classList.remove('active'));
+  chip.classList.add('active');
+  document.getElementById('tDhikr').textContent = chip.dataset.dhikr;
+  tCount = 0; tMsg.textContent = '';
+  updateTasbih();
+});
+document.getElementById('tasbihReset').addEventListener('click', () => {
+  tCount = 0; tRounds = 0; tTotal = 0; tMsg.textContent = '';
+  updateTasbih();
+});
+updateTasbih();
+
+/* ================= names of Allah ================= */
+const NAMES = [
+  ['الرَّحْمَنُ','আর-রাহমান','পরম দয়ালু'], ['الرَّحِيمُ','আর-রাহীম','অশেষ দয়ালু'],
+  ['الْمَلِكُ','আল-মালিক','মহান বাদশাহ'], ['الْقُدُّوسُ','আল-কুদ্দূস','মহাপবিত্র'],
+  ['السَّلَامُ','আস-সালাম','শান্তিদাতা'], ['الْمُؤْمِنُ','আল-মুমিন','নিরাপত্তাদাতা'],
+  ['الْعَزِيزُ','আল-আজিজ','পরাক্রমশালী'], ['الْجَبَّارُ','আল-জাব্বার','মহাশক্তিধর'],
+  ['الْخَالِقُ','আল-খালিক','সৃষ্টিকর্তা'], ['الْغَفَّارُ','আল-গাফফার','অতি ক্ষমাশীল'],
+  ['الرَّزَّاقُ','আর-রাজ্জাক','রিজিকদাতা'], ['الْعَلِيمُ','আল-আলীম','সর্বজ্ঞ'],
+  ['السَّمِيعُ','আস-সামী','সর্বশ্রোতা'], ['الْبَصِيرُ','আল-বাসীর','সর্বদ্রষ্টা'],
+  ['الْحَكِيمُ','আল-হাকীম','মহাপ্রজ্ঞাময়'], ['الْوَدُودُ','আল-ওয়াদূদ','পরম প্রেমময়'],
+  ['الشَّكُورُ','আশ-শাকূর','গুণগ্রাহী'], ['الْحَفِيظُ','আল-হাফীজ','মহারক্ষাকারী'],
+  ['الْكَرِيمُ','আল-কারীম','মহান দাতা'], ['الْمُجِيبُ','আল-মুজীব','ডাকে সাড়া দানকারী'],
+  ['النُّورُ','আন-নূর','আলো'], ['الْهَادِي','আল-হাদী','পথপ্রদর্শক'],
+  ['الصَّبُورُ','আস-সাবূর','মহাধৈর্যশীল'], ['اللَّطِيفُ','আল-লাতীফ','সূক্ষ্মদর্শী ও মেহেরবান']
+];
+document.getElementById('namesGrid').innerHTML = NAMES.map(n =>
+  '<div class="name-card"><div class="ar">' + n[0] + '</div><div class="tr">' + n[1] + '</div><div class="mn">' + n[2] + '</div></div>'
+).join('');
+</script>
+</body>
+</html>
